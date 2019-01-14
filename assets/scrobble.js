@@ -38,9 +38,10 @@ function getLatestTrack() {
 
 // Transform track data to a usable object
 function transform(data) {
+    console.log(data);
     // Create track object
     let track = {
-        cover: data.image[3]['#text'],
+        cover: data.image[2]['#text'],
         artist: data.artist['#text'],
         album: data.album['#text'],
         title: data.name,
@@ -68,8 +69,6 @@ function buildUrl(base, query) {
 
 // Update display to show latest track.
 function update(track) {
-    console.log('update track');
-
     // Hide the current track state.
     body.classList.add('is-hidden');
 
@@ -82,7 +81,6 @@ function update(track) {
 
     // Once cover art is loaded...
     cover.onload = () => {
-        console.log('track loaded');
         // Cover art can load quicker than CSS animations so we
         // delay it to keep it things running smooth.
         setTimeout(() => {
@@ -104,7 +102,6 @@ function update(track) {
 
             // Animate track in...
             body.classList.remove('is-hidden');
-            console.log('track fadein');
         }, 750);
     };
 }
