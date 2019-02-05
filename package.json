@@ -1,0 +1,28 @@
+{
+  "name": "now-playing",
+  "version": "1.0.0",
+  "description": "A simple webpage that displays the last track I listened to using the [Last.fm API](https://www.last.fm/api).",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --output-style compressed --source-map true --include-path node_modules src/sass/app.scss public/assets/css/app.min.css",
+    "watch": "nodemon -e scss -x \"npm run build\"",
+    "server": "./node_modules/.bin/http-server ./public",
+    "serve": "concurrently \"npm run server\" \"npm run watch\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jjgrainger/nowplaying.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jjgrainger/nowplaying/issues"
+  },
+  "homepage": "https://github.com/jjgrainger/nowplaying#readme",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "http-server": "^0.11.1",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.9"
+  }
+}

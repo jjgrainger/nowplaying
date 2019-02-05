@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="content-language" content="en-gb" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Now Playing</title>
+    
+    <link rel="stylesheet" href="/assets/css/app.min.css">
+</head>
+<body class="is-loading">
+    <main id="app">
+        <div class="cover is-hidden">
+            <div class="cover-background"></div>
+            <div class="cover-overlay">
+                <div class="cover-content"></div>
+            </div>
+        </div>
+
+        <div id="recent" class="recently-played">
+            <div class="container">
+                <h4 class="recent-heading">Recently Played</h4>
+
+                <ol class="recent-tracks"></ol>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Created by <a href="https://jjgrainger.co.uk">jjgrainger</a></p>
+    </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="/assets/js/scrobbler.js"></script>
+    <script src="/assets/js/track.js"></script>
+    <script src="/assets/js/updateCover.js"></script>
+    <script src="/assets/js/updateTracks.js"></script>
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>
