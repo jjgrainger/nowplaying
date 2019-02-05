@@ -1,0 +1,49 @@
+.track {
+    display: flex;
+}
+
+.track-media {
+    flex: 0 0 96px;
+    align-self: center;
+    text-align: center;
+    padding: .75rem;
+}
+
+.track-body {
+    flex: 1 1 auto;
+    align-self: center;
+    padding: .75rem;
+    font-size: 1rem;
+}
+
+.track-cover {
+    width: 100%;
+    max-width: 96px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+
+.track-title {
+    font-weight: bold;
+}
+
+.track-album {
+    display: block;
+}
+
+.track-time {
+    opacity: .5;
+}
+
+@media screen and (max-width: 480px) {
+
+    .track {
+        display: block;
+    }
+
+    .track-media,
+    .track-body {
+        flex: none;
+        text-align: center;
+    }
+}
