@@ -1,7 +1,7 @@
 {
   "name": "now-playing",
   "version": "1.0.0",
-  "description": "A simple webpage that displays the last track I listened to using the [Last.fm API](https://www.last.fm/api).",
+  "description": "A simple webpage that displays the last track I listened to using the Last.fm API",
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
