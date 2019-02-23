@@ -8,10 +8,8 @@ export default (track) => {
       <img class="track-cover" src="${cover}" alt="${album}">
     </div>
     <div class="track-body">
-      <p class="track-title">
-        <span class="track-name">${title}</span> by
-        <span class="track-artist">${artist}</span>
-      </p>
+      <span class="track-name">${title}</span>
+      <span class="track-artist">${artist}</span>
       <span class="track-album">${album}</span>
       <span class="track-time">${time}</span>
     </div>

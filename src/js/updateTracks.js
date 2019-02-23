@@ -8,8 +8,9 @@ export default (tracks) => {
 
   tracks
     .map(trackTemplate)
-    .forEach((track) => {
+    .forEach((track, i) => {
       let item = document.createElement('li');
+      item.dataset.number = i+1;
       item.innerHTML = track;
       container.appendChild(item);
     });
